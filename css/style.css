@@ -213,6 +213,8 @@ h1, h2, h3, h4, h5, h6, figure {
   border-radius: 50%;
   cursor: pointer;
 }
+
+/* Modal Profile */
 .modal-profile.active{
   display: block;
 }
@@ -253,6 +255,48 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #000;
   cursor: pointer;
 }
+
+
+.modal-contact.active{
+  display: block;
+}
+.modal-contact{
+  display: none;
+  position: fixed;
+  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: rgba(0,0,0);
+  background: rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+}
+.contact-content{
+  position: relative;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #fff;
+  max-width: 80rem;
+    width: 100%;
+}
+.contact-content .contact-header{
+  margin-bottom: 4rem;
+}
+.modal-contact .close{
+  float: right;
+  color: black!important;
+  font-size: 30px;
+  transition: 0.1s;
+}
+.close:hover,
+.close:focus{
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
 #fh5co-header .display-tc .fh5co-social-icons li a,
 .fh5co-cover .display-tc .fh5co-social-icons li a {
   color: #fff;

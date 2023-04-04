@@ -154,3 +154,10 @@ jQuery('.profile-thumb').on('click', function(){
 jQuery('span.close').on('click', function(){
     jQuery('.modal-profile').removeClass('active');
 });
+
+jQuery('.contact-btn').on('click', function(){
+	jQuery('.modal-contact').removeClass('inactive').addClass('active');
+ });
+ jQuery('.modal-contact .close').on('click', function(){
+	 jQuery('.modal-contact').removeClass('active');
+ });

@@ -38,7 +38,7 @@
 	<![endif]-->
 
 	</head>
-	<body oncontextmenu="return false">
+	<body oncontextmenu="return true">
 		
 	<div class="fh5co-loader"></div>
 	
@@ -54,11 +54,11 @@
 							<h1><span>Justine B. Salmeron</span></h1>
 							<h3><span>Web Developer / Technical Support</span></h3>
 							<p>
-								<ul class="fh5co-social-icons">
-									<li><a href="#"><i class="icon-instagram2"></i></a></li>
-									<li><a href="#"><i class="icon-facebook2"></i></a></li>
-									<li><a href="#"><i class="icon-linkedin2"></i></a></li>
-								</ul>
+                            <ul class="fh5co-social-icons">
+							<li><a href="https://www.instagram.com/just_two1131/" title="Instagram"><i class="icon-instagram2"></i></a></li>
+							<li><a href="https://www.facebook.com/justonce1141" title="Facebook"><i class="icon-facebook3"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/justine-salmeron-992924209/" title="LinkedIn"><i class="icon-linkedin2"></i></a></li>
+						</ul>
 							</p>
 						</div>
 					</div>
@@ -67,19 +67,14 @@
 		</div>
 	</header>
 
-	<style type="text/css">
-
-	</style>
-
-	<div class="modal-profile">
+	<div class="modal-profile animated-box">
 		<div class="profile-content">
 			<span class="close">&times;</span>
 			<div class="images">
 				Hello
 			</div>
 			<img src="images/justine.jpg">
-		</div>
-		
+		</div>		
 	</div>
 
 	<div id="fh5co-about" class="animate-box">
@@ -105,10 +100,9 @@
 					<p></p>
 					<p>
 						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-twitter2"></i></a></li>
-							<li><a href="#"><i class="icon-facebook3"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin2"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble2"></i></a></li>
+							<li><a href="https://www.instagram.com/just_two1131/" title="Instagram"><i class="icon-instagram2"></i></a></li>
+							<li><a href="https://www.facebook.com/justonce1141" title="Facebook"><i class="icon-facebook3"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/justine-salmeron-992924209/" title="LinkedIn"><i class="icon-linkedin2"></i></a></li>
 						</ul>
 					</p>
 				</div>
@@ -153,35 +147,10 @@
 								</div>
 							</div>
 						</li>
-<!-- 						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">UI/UX Designer</h3>
-									<span class="company">Company Name - 2010 - 2012</span>
-								</div>
-								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-								</div>
-							</div>
-						</li> -->
-
 						<br>
 						<li class="timeline-heading text-center animate-box">
 							<div><h3>Education</h3></div>
 						</li>
-<!-- 						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Masters Degree</h3>
-									<span class="company">University Name - 2007 - 2009</span>
-								</div>
-								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-								</div>
-							</div>
-						</li> -->
 						<li class="animate-box timeline-unverted">
 							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
 							<div class="timeline-panel">
@@ -206,24 +175,11 @@
 								</div>
 							</div>
 						</li>
-<!-- 						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Graduation</h3>
-									<span class="company">College Name - 1994 - 1998</span>
-								</div>
-								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-								</div>
-							</div>
-						</li> -->
 			    	</ul>
 				</div>
 			</div>
 		</div>
 	</div>
-	
 
 	<div id="fh5co-features" class="animate-box">
 		<div class="container">
@@ -241,7 +197,7 @@
 							</span>
 							<div class="feature-copy">
 								<h3>Web Design</h3>
-								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+								<p>My Web Design services create stunning and maintain user friendly website design.</p>
 							</div>
 						</div>
 					</div>
@@ -253,8 +209,9 @@
 							</span>
 							<div class="feature-copy">
 								<h3>Web Development</h3>
-								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
-							</div>
+								<p>My Web development services involve the creation and maintenance of websites using a variety of technologies, tools, and programming languages. </p>
+								
+								</div>
 						</div>
 
 					</div>
@@ -265,7 +222,7 @@
 							</span>
 							<div class="feature-copy">
 								<h3>Support</h3>
-								<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.</p>
+								<p>I am committed to delivering outstanding customer service and Support. </p>
 							</div>
 						</div>
 					</div>
@@ -316,12 +273,12 @@
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Work</h2>
+					<h2>Recent Work</h2>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://lemenda.vestahomes.com.ph/" target="__blank" class="work" style="background-image: url(images/scc-logo.jpg);">
+					<a href="https://stcecilia.edu.ph/" target="__blank" class="work" style="background-image: url(images/scc-logo.jpg);">
 						<div class="desc">
 							<h3>Saint Cecillia's College</h3>
 							<span>View</span>
@@ -355,65 +312,6 @@
 			</div>
 		</div>
 	</div>
-
-	<!-- <div id="fh5co-blog">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Post on Medium</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/portfolio-1.jpg);"></a>
-						<div class="blog-text">
-							<span class="posted_on">Mar. 15th 2016</span>
-							<h3><a href="#">Photoshoot On The Street</a></h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							<ul class="stuff">
-								<li><i class="icon-heart2"></i>249</li>
-								<li><i class="icon-eye2"></i>308</li>
-								<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div> 
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/portfolio-2.jpg);"></a>
-						<div class="blog-text">
-							<span class="posted_on">Mar. 15th 2016</span>
-							<h3><a href="#">Surfing at Philippines</a></h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							<ul class="stuff">
-								<li><i class="icon-heart2"></i>249</li>
-								<li><i class="icon-eye2"></i>308</li>
-								<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div> 
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/portfolio-3.jpg);"></a>
-						<div class="blog-text">
-							<span class="posted_on">Mar. 15th 2016</span>
-							<h3><a href="#">Capture Living On Uderwater</a></h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							<ul class="stuff">
-								<li><i class="icon-heart2"></i>249</li>
-								<li><i class="icon-eye2"></i>308</li>
-								<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div> 
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
-	
 	<div id="fh5co-started" class="fh5co-bg-dark">
 		<div class="overlay"></div>
 		<div class="container">
@@ -421,63 +319,65 @@
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<h2>Hire Me!</h2>
 					<p>I believe i am the best candidate for the web developer position because i have a experience in web development that my skills fit in your job description.</p>
-					<p><a href="#" class="btn btn-default btn-lg">Contact Us</a></p>
+					<!-- <p><a href="javascript:void(0)" class="btn btn-default btn-lg contact-btn">Message Me</a></p> -->
+					<p><a href="document/justine-cv.pdf" class="btn btn-default btn-lg" Download>Download CV</a></p>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div id="fh5co-consult">
-		<div class="video fh5co-video" style="background-image: url(images/cover_bg_1.jpg);">
-			<div class="overlay"></div>
+<!-- Modal contact -->
+<div class="modal-contact  animate-box">
+	<div class="contact-content">
+		<span class="close">&times;</span>
+		<div class="contact-header">
+			Contact
 		</div>
-		<div class="choose animate-box">
-			<h2>Contact</h2>
-			<form action="#">
+			<form class="send-message" method="get">
 				<div class="row form-group">
 					<div class="col-md-12">
-						<input type="text" id="fname" class="form-control" placeholder="Your firstname">
+						<input type="text" id="cname" name="cname" class="form-control" placeholder="Company Name">
 					</div>
 				</div>
 				<div class="row form-group">
 					<div class="col-md-12">
-						<input type="text" id="lname" class="form-control" placeholder="Your lastname">
-					</div>
-				</div>
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<input type="text" id="email" class="form-control" placeholder="Your email address">
+						<input type="text" id="hr-name" name="hr-name" class="form-control" placeholder="HR Name">
 					</div>
 				</div>
 
 				<div class="row form-group">
 					<div class="col-md-12">
-						<input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
+						<input type="email" id="email" name="email" class="form-control" placeholder="Email address">
 					</div>
 				</div>
 
 				<div class="row form-group">
 					<div class="col-md-12">
-						<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
+						<input type="text" id="subject" name="subject" class="form-control" placeholder="Your subject of this message">
+					</div>
+				</div>
+
+				<div class="row form-group">
+					<div class="col-md-12">
+						<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Short description about the company"></textarea>
 					</div>
 				</div>
 				<div class="form-group">
-					<input type="submit" value="Send Message" class="btn btn-primary">
+					<input type="submit" value="Send Message" class="btn btn-primary submit-message">
 				</div>
 
 			</form>	
-		</div>
-	</div>
+	</div>		
+</div>
 
-	<div id="map" class="fh5co-map"></div>
-	</div>
+	<!-- <div id="map" class="fh5co-map"></div>
+	</div> -->
 	
 	<div id="fh5co-footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
-					<p>&copy; Justine Salmeron</p>
+				<div class="col-md-12 text-center">
+					<p>&copy; Justine Salmeron &nbsp; All Right Reserved <?php echo date("Y"); ?></p>
 				</div>
 			</div>
 		</div>
