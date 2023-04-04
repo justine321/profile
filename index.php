@@ -38,7 +38,14 @@
 	<![endif]-->
 
 	</head>
-	<body oncontextmenu="return true">
+	<script>
+	function disableRightclick(){
+	alert("Sorry, Right Click is not allowed");
+	
+	return false;
+	}
+	</script>
+	<body oncontextmenu="return disableRightclick()">
 		
 	<div class="fh5co-loader"></div>
 	
