@@ -1385,4 +1385,14 @@ input[type="text"] {
   opacity: 0;
 }
 
+
+
+
+@media (max-width: 400px){
+   div.profile-name{
+        min-width: 100%!important;
+        order: 2
+      
+    }
+}
 /*# sourceMappingURL=style.css.map */
