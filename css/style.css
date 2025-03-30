@@ -1388,7 +1388,7 @@ input[type="text"] {
 
 
 @media (max-width: 600px){
-   div.profile-name{
+   .col.col-md-8.col-sm-12.col-xl-8.profile-name{
         min-width: 100%!important;
         order: 2
       
