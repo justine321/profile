@@ -309,6 +309,7 @@ a.work{
     }
     .js-sidebar-body{
         display: flex;
+        overflow-x: auto;
     }
 
     .js-side-bar-child{
@@ -333,8 +334,11 @@ a.work{
       justify-content: space-between;
     }
     .profile-nav-ul li{
-      width: fit-content;
-    }
+      width: 8rem;
+      text-align: center;
+      }
+  
+  
 
 
 }
