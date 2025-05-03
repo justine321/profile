@@ -1385,4 +1385,13 @@ input[type="text"] {
   opacity: 0;
 }
 
+
+
+@media (max-width: 600px){
+   .col.col-md-8.col-sm-12.col-xl-8.profile-name{
+        min-width: 100%!important;
+        order: 2
+      
+    }
+}
 /*# sourceMappingURL=style.css.map */
