@@ -99,7 +99,8 @@ outline: 1px solid slategrey;
     font-family: 'Righteous', sans-serif;
     color: rgba(255,255,255,0.98);
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 20px;
+    padding: 10px;
   }
   
   .portofio-wrapper p {
@@ -293,6 +294,10 @@ a.work{
     width: auto;
 }
 
+
+.hamburger-icon{
+  display: none;
+}
 @media (max-width: 600px ){
 
     
@@ -300,6 +305,7 @@ a.work{
     .js-sidebar{
         width: 100%;
         padding-bottom: 1rem;
+        overflow: auto;
     }
     .js-sidebar-body{
         display: flex;
@@ -307,5 +313,28 @@ a.work{
 
     .js-side-bar-child{
         height: unset;
+        overflow-x: auto;
     }
+
+    .profile-content{
+      flex-direction: column;
+    }
+
+    .profile-name{
+      order: 2;
+    }
+
+    .js-profile-img{
+      display: none;
+    }
+
+    .profile-nav-ul{
+      display: flex;
+      justify-content: space-between;
+    }
+    .profile-nav-ul li{
+      width: fit-content;
+    }
+
+
 }
