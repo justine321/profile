@@ -309,11 +309,13 @@ a.work{
     }
     .js-sidebar-body{
         display: flex;
+    position: sticky;
+    overflow: auto;
     }
 
     .js-side-bar-child{
         height: unset;
-        overflow-x: auto;
+        overflow-x: unset;
     }
 
     .profile-content{
@@ -331,6 +333,7 @@ a.work{
     .profile-nav-ul{
       display: flex;
       justify-content: space-between;
+      width: 28rem;
     }
     .profile-nav-ul li{
       width: fit-content;
