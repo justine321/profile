@@ -1,606 +1,1352 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>JSalmeron Profile</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" >
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/aos.js"></script>
-  </head>
-  <body>
-    
-    <div class="container-fluid p-4  js-container pos-relative">
-        <div class="row">
-            <div class="js-sidebar">
-                <div class="card rounded-4 bg-transparent shadow-sm js-side-bar-child">
-                    <div class="card-body js-sidebar-body bg-transparent rounded-4">
-                        <img src="assets/img/me_graduate.JPG" id="js-profile-img" alt="Profile Pic" class="rounded-4 fade-in-text mb-4 js-profile-img"> 
-                        <nav class="profile-nav-bar">
-                            <ul class="profile-nav-ul fade-in-text">
-                                <li class="p-1"><a id="about-me-item" href="#" data-target="about-me">About Me</a></li>
-                                <li class="p-1"><a id="skills-item" href="#" data-target="skills">Skills</a></li>
-                                <li class="p-1"><a id="experience-item" href="#" data-target="experience">Experience</a></li>
-                                <li class="p-1"><a id="portfolio-item" href="#" data-target="portfolio">Portfolio</a></li>
-                                <li class="p-1"><a  id="cv-item" href="#" data-target="cv">CV</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Justine Salmeron — Associate Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
- 
-            </div>
+  :root {
+    --bg: #0a0a0a;
+    --bg-2: #111111;
+    --bg-3: #161616;
+    --bg-4: #1c1c1c;
+    --border: rgba(255,255,255,0.07);
+    --border-hover: rgba(255,255,255,0.14);
+    --text: #f0ede8;
+    --text-2: #9a9590;
+    --text-3: #5c5850;
+    --accent: #5b8def;
+    --accent-glow: rgba(91,141,239,0.18);
+    --accent-dim: rgba(91,141,239,0.08);
+    --mono: 'DM Mono', monospace;
+    --sans: 'DM Sans', sans-serif;
+  }
 
-            <div class="col">
-                <div class="col js-salmeron-content p-4 rounded-4 h-100">
-                    <div class="card-body  mb-4">
-                        <div class="card shadow-sm js-content">
-                            <div class="card-body ">
-                                <div class="row  profile-content">
-                                    <div class="col col-md-8 col-sm-8 col-xl-8 profile-name">
-                                        <h2 class="fade-in-text">Justine Barnayha Salmeron</h2>
-                                        <h3 class="fade-in-text">Associate Developer</h3>
-                                    </div>
-                                    <div class="col col-md-4 col-sm-12 col-xl-4 clock-time">
-                                        <div class="float-end fade-in-text" id="realtime-hours" style="color: #edc631;"></div>
-                                    </div>
-                                </div> 
-                            </div>      
-             
-                        </div>
-                    </div>   
+  html { scroll-behavior: smooth; }
 
-                    <div class="card-body">
-                        <div class="card shadow-sm js-content">
-                            <div class="card-body  main-content" style="height: 74vh; overflow: auto; -ms-overflow-style: none;  scrollbar-width: none; ">
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
 
-                                <div id="about-me" class="content-section active-section">
-                                    <div class="col mb-5">
-                                        <h4 class="header-title text-uppercase fade-in-text">ABOUT ME</h4>
-                                        <hr>                                        
-                                        <h5 class="fade-in-text">"I am an Associate Developer with experience in web and desktop app development, and I have been working with a lending company since 2023. I have a strong interest in nature; when I'm not coding or tackling challenging software problems, I enjoy spending time in the great outdoors. Activities such as camping, trekking through beautiful trails, and participating in various environmental initiatives are among my favorites."</h5>
-                                        
-                                    </div>
-                                    <div class="row ">
-                                        <div class="col-md-6 text-white fade-in-text">
-                                            <h4>EDUCATIONAL BACKGROUND</h4>
-                                            <hr></hr>
-                                            <div class="col">
-                                                <ul>
-                                                    <li>
-                                                        <h5>St. Cecilia's College Cebu-Inc. </h5>
-                                                        <ul>
-                                                            <li>College - BSIT</li>
-                                                            <li>Ward 4 Minglanilla Cebu City</li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                        <h5>Naga National High School (NNHS) </h5>
-                                                        <ul>
-                                                            <li>High School</li>
-                                                            <li>City of Naga</li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                        <h5>Pangdan Elementary School</h5>
-                                                        <ul>
-                                                            <li>Pangdan City of Naga Cebu</li>
-                                                            <li>Elementary School</li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6  text-white fade-in-text">
-                                            <h4>OHTER INFORMATION</h4>
-                                            <hr></hr>
-                                            <div class="col ">
-                                                <h5>Birth Date: August 04, 1999 </h5>
-                                                <h5>Birth Place: City of Naga </h5>
-                                                <h5>Present Address: Pangdan Grayrocks City of Naga Cebu</h5>
-                                                <h5>Current Address: Pangdan Grayrocks City of Naga Cebu</h5>
-                                                <h5>Email Address: justinesalmeron321@gmail.com</h5>
-                                                <h5>Contact No: 09551129028</h5>                                          
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+  ::selection { background: var(--accent-glow); color: var(--text); }
 
-                                <div id="skills"  class="content-section">
-                                    <div class="row justify-content-center">
-                                        <h4 class="header-title text-uppercase fade-in-text">skill's set</h4>
-                                        <div class="skill-list">
-                                            <div class="skill fade-in-text">HTML</div>
-                                            <div class="skill fade-in-text">CSS</div>
-                                            <div class="skill fade-in-text">JavaScript</div>
-                                            <div class="skill fade-in-text">jQuery</div>
-                                            <div class="skill fade-in-text">Bootstrap</div>
-                                            <div class="skill fade-in-text">Powerbuilder</div>
-                                            <div class="skill fade-in-text">Git</div>
-                                            <div class="skill fade-in-text">PHP</div>
-                                        </div>
+  a { color: inherit; text-decoration: none; }
 
-                                        <div class="d-none">
-                                            <div class="col-md-2 col-sm-12 mb-3">
-                                                <div class="card">
-                                                    <div class="card-body d-flex justify-content-around flex-wrap bg-transparent">
-                                                        <img src="assets/logo/html.webp" class="card-img-top rounded-circle mb-3" alt="..." style="width: 12pc;">           
-                                                    </div>
-                                                    <div class="progress">
-                                                        <div class="progress-bar  bg-info" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div> 
-                                                </div>
-                                            </div>
-                                            <div class="col-md-2 col-sm-12 mb-3">
-                                                <div class="card">
-                                                    <div class="card-body d-flex justify-content-around flex-wrap bg-transparent">
-                                                        <img src="assets/logo/css.webp" class="card-img-top rounded-circle mb-3" alt="..." style="width: 12pc;">          
-                                                    </div>
-                                                    <div class="progress">
-                                                        <div class="progress-bar bg-info" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-2 col-sm-12 mb-3">
-                                                <div class="card">
-                                                    <div class="card-body d-flex justify-content-around flex-wrap bg-transparent">
-                                                        <img src="assets/logo/js.webp" class="card-img-top rounded-circle mb-3" alt="..." style="width: 12pc;">        
-                                                    </div>
-                                                    <div class="progress">
-                                                        <div class="progress-bar  bg-info" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-2 col-sm-12 mb-3">
-                                                <div class="card">
-                                                    <div class="card-body d-flex justify-content-around flex-wrap bg-transparent">
-                                                        <img src="assets/logo/jquery.webp" class="card-img-top rounded-circle mb-3" alt="..." style="width: 12pc;">       
-                                                    </div>
-                                                    <div class="progress">
-                                                        <div class="progress-bar  bg-info" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-2 col-sm-12 mb-3">
-                                                <div class="card">
-                                                    <div class="card-body d-flex justify-content-around flex-wrap bg-transparent">
-                                                        <img src="assets/logo/php.webp" class="card-img-top rounded-circle mb-3" alt="..." style="width: 12pc;">
-                                                    </div>
-                                                    <div class="progress">
-                                                        <div class="progress-bar  bg-info" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-2 col-sm-12 mb-3">
-                                                <div class="card">
-                                                    <div class="card-body d-flex justify-content-around flex-wrap bg-transparent">
-                                                        <img src="assets/logo/wordpress.webp" class="card-img-top rounded-circle mb-3" alt="..." style="width: 12pc;">           
-                                                    </div>
-                                                    <div class="progress">
-                                                        <div class="progress-bar  bg-info" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div> 
-                                                </div>
-                                            </div>
-                                            <div class="col-md-2 col-sm-12 mb-3">
-                                                <div class="card">
-                                                    <div class="card-body d-flex justify-content-around flex-wrap bg-transparent">
-                                                        <img src="assets/logo/pb.webp" class="card-img-top rounded-circle mb-3" alt="..." style="width: 12pc;">          
-                                                    </div>
-                                                    <div class="progress">
-                                                        <div class="progress-bar  bg-info" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>  
-                                                </div>
-                                            </div>
-                                        </div>
+  /* ── SCROLLBAR ── */
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--bg-4); border-radius: 2px; }
 
-                                    </div>
-                                </div>
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    height: 60px;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 max(2rem, calc((100vw - 1100px) / 2));
+    background: rgba(10,10,10,0.6);
+    backdrop-filter: blur(20px) saturate(150%);
+    -webkit-backdrop-filter: blur(20px) saturate(150%);
+    border-bottom: 1px solid var(--border);
+    transition: border-color 0.3s;
+  }
+  .nav-logo {
+    font-size: 15px; font-weight: 500; letter-spacing: -0.01em;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .nav-logo span {
+    width: 28px; height: 28px; border-radius: 8px;
+    background: var(--accent-dim);
+    border: 1px solid rgba(91,141,239,0.25);
+    display: grid; place-items: center;
+    font-size: 12px; font-weight: 600; color: var(--accent);
+    font-family: var(--mono);
+  }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a {
+    font-size: 14px; color: var(--text-2);
+    transition: color 0.2s;
+    position: relative;
+  }
+  .nav-links a:hover { color: var(--text); }
+  .nav-links a.active { color: var(--text); }
+  .nav-links a.active::after {
+    content: '';
+    position: absolute; bottom: -4px; left: 0; right: 0;
+    height: 1px; background: var(--accent);
+    border-radius: 1px;
+  }
+  .nav-cta {
+    font-size: 13px; font-weight: 500;
+    padding: 7px 16px;
+    background: var(--accent-dim);
+    border: 1px solid rgba(91,141,239,0.25);
+    border-radius: 8px;
+    color: var(--accent);
+    transition: background 0.2s, border-color 0.2s;
+    cursor: pointer;
+  }
+  .nav-cta:hover { background: rgba(91,141,239,0.15); border-color: rgba(91,141,239,0.4); }
 
-                                <div id="experience"  class="content-section">
-                                    <div class="col">
-                                        <h4 class="header-title text-uppercase fade-in-text">Experience</h4>
-                                        <hr>
-                                    </div>
+  /* ── LAYOUT ── */
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
 
-                                    <div class="row ">
-                                        <div class="col-md-12 text-white fade-in-text">
-                                            <h5>YYKredit Inc. (Full Time)</h5>
-                                            <hr>
-                                            <div class="col">
-                                                <ul>
-                                                    <li>
-                                                        <h5>May 2023 - Preset</h5>
-                                                    </li>
-                                                    <li>
-                                                        <h5>Associate Developer</h5>
-                                                    </li>
-                                                    <li>
-                                                        <h5>3rd Floor Clotilde Commercial Center, M.L. Quezon Street Casuntingan, Mandaue City 6014</h5>
-                                                    </li>
-                                                    <li>
-                                                        <h5>Job Description</h5>
-                                                        <div class="col">
-                                                            <ul>
-                                                                <li>Design and Develop existing website.
+  section { padding: 120px 0; }
 
-                                                                    <div class="col">
-                                                                        <ul>
-                                                                            <li>JQuery</li>
-                                                                            <li>PHP Native</li>
-                                                                            <li>Bootstrap</li>
-                                                                            <li>ChartJs</li>
-                                                                            <li>Database Server (Sybase)</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </li>
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh;
+    display: flex; align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+  }
 
+  .hero-grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black, transparent);
+    -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black, transparent);
+  }
 
-                                                                <li>Design and develop Desktop Application.
+  .hero-glow {
+    position: absolute;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(91,141,239,0.12) 0%, transparent 65%);
+    top: 50%; left: 50%;
+    transform: translate(-50%, -60%);
+    pointer-events: none;
+  }
 
-                                                                    <div class="col">
-                                                                        <ul>
-                                                                            <li>Deploy app to exe file</li>
-                                                                            <li>Powerbuilder 11.0 (Old Version)</li>
-                                                                            <li>Powerscript (.NET)</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </li>
+  .hero-content {
+    position: relative; z-index: 2;
+    max-width: 1100px; margin: 0 auto; padding: 0 2rem;
+    width: 100%;
+  }
 
-                                                            </ul>
-                                                        </div>
-                                                    </li>
-                                                </ul>                                                
-                                            </div>
-                                            <hr>
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 6px 14px;
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    font-size: 13px; color: var(--text-2);
+    margin-bottom: 2.5rem;
+    background: var(--bg-2);
+    animation: fadeUp 0.8s ease both;
+  }
+  .hero-badge-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: #4ade80;
+    box-shadow: 0 0 8px rgba(74,222,128,0.6);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
 
-                                            <h5>Vestahome Commercial In. (Full Time)</h5>
-                                            <hr>
-                                            <div class="col">
-                                                <ul>
-                                                    <li>
-                                                        <h5>June 2022 - March 2023</h5>
-                                                    </li>
-                                                    <li>
-                                                        <h5>Web Developer</h5>
-                                                    </li>
-                                                    <li>
-                                                        <h5>3rd Floor 785 LBR Building, V.Rama Ave. Englis, Cebu City, Philippines 6000</h5>
-                                                    </li>
-                                                    <li>
-                                                        <h5>Job Description</h5>
-                                                        <div class="col">
-                                                            <ul>
-                                                                <li>Design and develop wordpress websites.</li>
-                                                            </ul>
-                                                        </div>
-                                                    </li>
-                                                </ul>                                                
-                                            </div>
-                                            <hr>
-                                            <h4>Saint. Cecillia's College (OJT | Intern & Working Student)</h4>
-                                            <hr>
-                                            <div class="col">
-                                                <ul>
-                                                    <li>
-                                                        <h5>March 2019 - July 2022</h5>
-                                                    </li>
-                                                    <li>
-                                                        <h5>Web Developer & IT Technical Support</h5>
-                                                    </li>
-                                                    <li>
-                                                        <h5>Minglanilla Ward IV Cebu City, Philippines 6044</h5>
-                                                    </li>
-                                                    <li>
-                                                        <h5>Job Description</h5>
-                                                        <div class="col">
-                                                            <ul>
-                                                                <li>Troubleshooting Hardware and Software.
+  .hero-h1 {
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    font-weight: 600;
+    line-height: 1.04;
+    letter-spacing: -0.04em;
+    margin-bottom: 1.5rem;
+    animation: fadeUp 0.8s 0.1s ease both;
+  }
+  .hero-h1 em {
+    font-style: normal;
+    color: var(--text-2);
+  }
 
-                                                                    <div class="col">
-                                                                        <ul>
-                                                                            <li>Repair PC</li>
-                                                                            <li>Check Hardware</li>
-                                                                            <li>Cabling</li>
-                                                                            <li>Update Computer Software</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </li>
+  .hero-sub {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: var(--text-2);
+    max-width: 500px;
+    margin-bottom: 3rem;
+    line-height: 1.7;
+    font-weight: 300;
+    animation: fadeUp 0.8s 0.2s ease both;
+  }
 
-                                                                <li>Develop PHP Website
-                                                                    <div class="col">
-                                                                        <ul>
-                                                                            <li>Design and Develop websites.</li>
-                                                                            <li>Hosting websites.</li>
-                                                                            <li>Work with Database (MySQL)</li>
-                                                                            <li>PHP</li>
-                                                                            <li>ChartJS</li>
-                                                                            <li>Bootstrap</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    
-                                                    </li>
-                                                </ul>                                                
-                                            </div>
+  .hero-actions {
+    display: flex; gap: 1rem; flex-wrap: wrap;
+    animation: fadeUp 0.8s 0.3s ease both;
+  }
 
-                                        </div>
-                                    </div>
-                                </div>
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 12px 24px;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 10px;
+    font-size: 14px; font-weight: 500;
+    transition: opacity 0.2s, transform 0.15s;
+    border: none; cursor: pointer;
+  }
+  .btn-primary:hover { opacity: 0.88; transform: translateY(-1px); }
 
-                                <div id="portfolio"  class="content-section">
-                                    <div class="row justify-content-center fade-in-text gap-4">
+  .btn-ghost {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 12px 24px;
+    background: transparent;
+    color: var(--text-2);
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    font-size: 14px; font-weight: 400;
+    transition: color 0.2s, border-color 0.2s, transform 0.15s;
+    cursor: pointer;
+  }
+  .btn-ghost:hover { color: var(--text); border-color: var(--border-hover); transform: translateY(-1px); }
 
-                                        <div class="portfolio-container">
-                                            <div class="portfolio-wrapper">
-                                                <div class="project-image" style="background-image: url('assets/img/scc-logo.jpg');"> </div>
-                                                <h1 class="project-title">Saint Cecilia's College</h1>
-                                                <p class="d-none">Lorem ipsum dolor sit amet, <br/>consectetur adipiscing elit.</p>
-                                             </div>
-                                             <div>
-                                                <div class="button-wrapper"> 
-                                                    <button class="btn outline">DETAILS</button>
-                                                    <button class="btn fill" onclick="window.open('https://stcecilia.edu.ph/', '_blank');">VISIT SITE</button>
-                                                </div>
-                                            </div>
-                                        </div>
+  .hero-scroll-hint {
+    position: absolute; bottom: 3rem; left: 50%; transform: translateX(-50%);
+    display: flex; flex-direction: column; align-items: center; gap: 8px;
+    font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--text-3);
+    animation: fadeUp 0.8s 0.6s ease both;
+  }
+  .scroll-line {
+    width: 1px; height: 40px;
+    background: linear-gradient(to bottom, var(--border-hover), transparent);
+    animation: scrollLine 2s infinite;
+  }
+  @keyframes scrollLine {
+    0% { transform: scaleY(0); transform-origin: top; }
+    50% { transform: scaleY(1); transform-origin: top; }
+    51% { transform-origin: bottom; }
+    100% { transform: scaleY(0); transform-origin: bottom; }
+  }
 
-                                        <div class="portfolio-container">
-                                            <div class="portfolio-wrapper">
-                                                <div class="project-image" style="background-image: url('assets/img/hayat-logo.jpg');"> </div>
-                                                <h1 class="project-title">Hayat Sky Towers</h1>
-                                                <p class="d-none">Lorem ipsum dolor sit amet, <br/>consectetur adipiscing elit.</p>
-                                             </div>
-                                             <div>
-                                                <div class="button-wrapper"> 
-                                                    <button class="btn outline">DETAILS</button>
-                                                    <button class="btn fill" onclick="window.open('https://hayatskytowers.com/', '_blank');">VISIT SITE</button>
-                                                </div>
-                                            </div>
-                                        </div>
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
 
-                                        <div class="portfolio-container">
-                                            <div class="portfolio-wrapper">
-                                                <div class="project-image" style="background-image: url('assets/img/lemenda-logo.jpg');"> </div>
-                                                <h1 class="project-title">Lemenda Project 1</h1>
-                                                <p class="d-none">Lorem ipsum dolor sit amet, <br/>consectetur adipiscing elit.</p>
-                                             </div>
-                                             <div>
-                                                <div class="button-wrapper"> 
-                                                    <button class="btn outline">DETAILS</button>
-                                                    <button class="btn fill" onclick="window.open('https://lemenda.vestahomes.com.ph/', '_blank');">VISIT SITE</button>
-                                                </div>
-                                            </div>
-                                        </div>
+  /* ── SECTION HEADERS ── */
+  .section-label {
+    font-family: var(--mono);
+    font-size: 11px; letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1rem;
+  }
+  .section-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+  .section-desc {
+    color: var(--text-2);
+    font-size: 1.05rem;
+    max-width: 500px;
+    font-weight: 300;
+    line-height: 1.7;
+  }
 
+  /* ── ABOUT ── */
+  #about .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: start;
+    margin-top: 5rem;
+  }
 
-                                        <div class="portfolio-container">
-                                            <div class="portfolio-wrapper">
-                                                <div class="project-image" style="background-image: url('assets/img/lemenda-nivel-logo.jpg');"> </div>
-                                                <h1 class="project-title">Lemenda Project 2</h1>
-                                                <p class="d-none">Lorem ipsum dolor sit amet, <br/>consectetur adipiscing elit.</p>
-                                             </div>
-                                             <div>
-                                                <div class="button-wrapper"> 
-                                                    <button class="btn outline">DETAILS</button>
-                                                    <button class="btn fill" onclick="window.open('https://lemenda.vestahomes.com.ph/', '_blank');">VISIT SITE</button>
-                                                </div>
-                                            </div>
-                                        </div>
+  .about-text p {
+    color: var(--text-2);
+    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    font-weight: 300;
+  }
+  .about-text p strong { color: var(--text); font-weight: 500; }
 
+  .about-info {
+    margin-top: 2rem;
+    display: flex; flex-direction: column; gap: 0.75rem;
+  }
+  .info-row {
+    display: flex; gap: 1rem;
+    font-size: 13px;
+  }
+  .info-label { color: var(--text-3); min-width: 90px; font-family: var(--mono); }
+  .info-val { color: var(--text-2); }
+  .info-val a { color: var(--accent); }
 
+  .skills-panel h3 {
+    font-size: 13px; font-weight: 500;
+    color: var(--text-3);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.25rem;
+    font-family: var(--mono);
+  }
 
-                                        <div class="portfolio-container">
-                                            <div class="portfolio-wrapper">
-                                                <div class="project-image" style="background-image: url('assets/img/yyestate-logo-1.png');"> </div>
-                                                <h1 class="project-title">YY Estate -Land Estate</h1>
-                                                <p class="d-none">Lorem ipsum dolor sit amet, <br/>consectetur adipiscing elit.</p>
-                                             </div>
-                                             <div>
-                                                <div class="button-wrapper"> 
-                                                    <button class="btn outline">DETAILS</button>
-                                                    <button class="btn fill" onclick="window.open('https://yykredit.com/yyestate/', '_blank');">VISIT SITE</button>
-                                                </div>
-                                            </div>
-                                        </div>
+  .skills-grid {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    margin-bottom: 2.5rem;
+  }
 
-                                        <div class="portfolio-container">
-                                            <div class="portfolio-wrapper">
-                                                <div class="project-image" style="background-image: url('assets/img/passit_blue.png');"> </div>
-                                                <h1 class="project-title">PASSIT -Payroll System</h1>
-                                                <p class="d-none">Lorem ipsum dolor sit amet, <br/>consectetur adipiscing elit.</p>
-                                             </div>
-                                             <div>
-                                                <div class="button-wrapper"> 
-                                                    <button class="btn outline">DETAILS</button>
-                                                    <button class="btn fill" onclick="window.open('https://yykredit.com/hris', '_blank');">VISIT SITE</button>
-                                                </div>
-                                            </div>
-                                        </div>
+  .skill-pill {
+    display: inline-flex; align-items: center; gap: 7px;
+    padding: 7px 14px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg-2);
+    font-size: 13px;
+    color: var(--text-2);
+    transition: border-color 0.2s, color 0.2s, background 0.2s;
+    cursor: default;
+  }
+  .skill-pill:hover {
+    border-color: var(--border-hover);
+    color: var(--text);
+    background: var(--bg-3);
+  }
 
+  /* ── PROJECTS ── */
+  #projects { background: var(--bg); }
 
-                                        <div class="portfolio-container">
-                                            <div class="portfolio-wrapper">
-                                                <div class="project-image" style="background-image: url('assets/logo/powerbuilder-icon.png');"> </div>
-                                                <h1 class="project-title">Service Charge APP</h1>
-                                                <p class="d-none">Lorem ipsum dolor sit amet, <br/>consectetur adipiscing elit.</p>
-                                             </div>
-                                             <div>
-                                                <div class="button-wrapper"> 
-                                                    <button class="btn outline">DETAILS</button>
-                                                    <button class="btn fill">VISIT SITE</button>
-                                                </div>
-                                            </div>
-                                        </div>
+  .projects-header {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    margin-bottom: 4rem;
+    flex-wrap: wrap; gap: 1rem;
+  }
 
-                                        <div class="portfolio-container">
-                                            <div class="portfolio-wrapper">
-                                                <div class="project-image" style="background-image: url('assets/img/ntouch-logo.png');"> </div>
-                                                <h1 class="project-title">ntouch services</h1>
-                                                <p class="d-none">Lorem ipsum dolor sit amet, <br/>consectetur adipiscing elit.</p>
-                                             </div>
-                                             <div>
-                                                <div class="button-wrapper"> 
-                                                    <button class="btn outline">DETAILS</button>
-                                                    <button class="btn fill" onclick="window.open('/ntouch-internet-services/', '_blank');">VISIT SITE</button>
-                                                </div>
-                                            </div>
-                                        </div>
+  .bento {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+  }
 
-                                    </div>
-                                </div>
+  .project-card {
+    background: var(--bg-2);
+    padding: 2rem;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.25s;
+    cursor: pointer;
+    min-height: 260px;
+  }
+  .project-card:hover { background: var(--bg-3); }
 
-                                <div id="cv"  class="content-section">
-                                    <div class="row justify-content-center fade-in-text">
-                                        <iframe src="assets/pdf/jsalmeron.pdf" width="1000" height="1000"></iframe>                                              
-                                    </div>
-                                </div>
+  .card-large { grid-column: span 7; }
+  .card-medium { grid-column: span 5; }
+  .card-full { grid-column: span 12; min-height: 200px; }
+  .card-third { grid-column: span 4; }
 
-                            </div>                       
-                        </div>
-                    </div>  
-                </div>
-            </div>
+  .project-card-glow {
+    position: absolute;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--accent-glow), transparent 70%);
+    top: -60px; right: -40px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+  .project-card:hover .project-card-glow { opacity: 1; }
+
+  .project-number {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-3);
+    margin-bottom: auto;
+  }
+
+  .project-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+  }
+
+  .project-desc {
+    font-size: 13px;
+    color: var(--text-2);
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+    font-weight: 300;
+  }
+
+  .project-tags {
+    display: flex; flex-wrap: wrap; gap: 6px;
+    margin-bottom: 1.25rem;
+  }
+  .tag {
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 4px;
+    background: var(--bg-4);
+    color: var(--text-3);
+    font-family: var(--mono);
+    letter-spacing: 0.03em;
+    border: 1px solid var(--border);
+  }
+
+  .project-links {
+    display: flex; gap: 10px;
+  }
+  .proj-link {
+    font-size: 12px;
+    color: var(--text-3);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 5px 12px;
+    transition: color 0.2s, border-color 0.2s;
+    display: flex; align-items: center; gap: 5px;
+  }
+  .proj-link:hover { color: var(--text); border-color: var(--border-hover); }
+
+  /* ── EXPERIENCE ── */
+  #experience { background: var(--bg); }
+
+  .timeline {
+    margin-top: 4rem;
+    position: relative;
+    padding-left: 2px;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 1px;
+    background: linear-gradient(to bottom, var(--accent), var(--border) 80%, transparent);
+  }
+
+  .timeline-item {
+    padding: 0 0 4rem 3rem;
+    position: relative;
+  }
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -4px; top: 6px;
+    width: 9px; height: 9px;
+    border-radius: 50%;
+    border: 1px solid var(--accent);
+    background: var(--bg);
+    box-shadow: 0 0 12px var(--accent-glow);
+  }
+  .timeline-item:first-child::before { background: var(--accent); }
+
+  .timeline-date {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    margin-bottom: 0.75rem;
+  }
+
+  .timeline-role {
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.25rem;
+  }
+  .timeline-company {
+    font-size: 14px;
+    color: var(--text-2);
+    margin-bottom: 1rem;
+  }
+
+  .timeline-details {
+    list-style: none;
+    display: flex; flex-direction: column; gap: 0.5rem;
+  }
+  .timeline-details li {
+    font-size: 14px;
+    color: var(--text-2);
+    padding-left: 1rem;
+    position: relative;
+    font-weight: 300;
+  }
+  .timeline-details li::before {
+    content: '—';
+    position: absolute; left: 0;
+    color: var(--text-3);
+  }
+
+  .edu-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    margin-top: 5rem;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .edu-card {
+    background: var(--bg-2);
+    padding: 1.75rem;
+    transition: background 0.2s;
+  }
+  .edu-card:hover { background: var(--bg-3); }
+  .edu-level {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-3);
+    margin-bottom: 0.75rem;
+  }
+  .edu-school {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.5rem;
+  }
+  .edu-detail {
+    font-size: 13px;
+    color: var(--text-2);
+    font-weight: 300;
+  }
+
+  /* ── CONTACT ── */
+  #contact { background: var(--bg); }
+
+  .contact-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 6rem; margin-top: 5rem; align-items: start;
+  }
+
+  .contact-form {
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+
+  .form-group {
+    display: flex; flex-direction: column; gap: 0.5rem;
+  }
+  .form-group label {
+    font-size: 12px;
+    color: var(--text-3);
+    font-family: var(--mono);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .form-group input,
+  .form-group textarea {
+    background: var(--bg-2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 16px;
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+    resize: none;
+  }
+  .form-group input:focus,
+  .form-group textarea:focus { border-color: rgba(91,141,239,0.4); }
+  .form-group input::placeholder,
+  .form-group textarea::placeholder { color: var(--text-3); }
+
+  .submit-btn {
+    width: 100%;
+    padding: 13px;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px; font-weight: 500;
+    font-family: var(--sans);
+    cursor: pointer;
+    transition: opacity 0.2s;
+    margin-top: 0.5rem;
+  }
+  .submit-btn:hover { opacity: 0.85; }
+
+  .contact-info h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+  }
+  .contact-info p {
+    color: var(--text-2);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+  }
+
+  .contact-links {
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+  .contact-link {
+    display: flex; align-items: center; gap: 1rem;
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--bg-2);
+    transition: background 0.2s, border-color 0.2s;
+    font-size: 14px;
+    color: var(--text-2);
+  }
+  .contact-link:hover {
+    background: var(--bg-3);
+    border-color: var(--border-hover);
+    color: var(--text);
+  }
+  .contact-link-icon {
+    width: 36px; height: 36px;
+    border-radius: 8px;
+    background: var(--accent-dim);
+    display: grid; place-items: center;
+    flex-shrink: 0;
+  }
+  .contact-link-icon svg { width: 16px; height: 16px; stroke: var(--accent); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+
+  /* ── FOOTER ── */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 2.5rem 0;
+    text-align: center;
+  }
+  footer p {
+    font-size: 13px;
+    color: var(--text-3);
+    font-family: var(--mono);
+  }
+  footer span { color: var(--text-2); }
+
+  /* ── DIVIDER ── */
+  .section-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--border), transparent);
+    margin: 0 2rem;
+  }
+
+  /* ── REVEAL ANIMATIONS ── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* ── HAMBURGER MENU ── */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 36px; height: 36px;
+    background: none; border: none; cursor: pointer;
+    padding: 4px;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+  .hamburger:hover { background: var(--bg-3); }
+  .hamburger span {
+    display: block;
+    width: 100%; height: 1.5px;
+    background: var(--text-2);
+    border-radius: 2px;
+    transition: transform 0.3s, opacity 0.3s, width 0.3s;
+    transform-origin: center;
+  }
+  .hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+  .hamburger.open span:nth-child(2) { opacity: 0; width: 0; }
+  .hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 60px; left: 0; right: 0;
+    background: rgba(10,10,10,0.97);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    z-index: 99;
+    padding: 1.5rem;
+    flex-direction: column;
+    gap: 0;
+    transform: translateY(-10px);
+    opacity: 0;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+  }
+  .mobile-menu.open {
+    display: flex;
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .mobile-menu a {
+    display: block;
+    padding: 1rem 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-2);
+    border-bottom: 1px solid var(--border);
+    transition: color 0.2s;
+  }
+  .mobile-menu a:last-child { border-bottom: none; }
+  .mobile-menu a:hover, .mobile-menu a:active { color: var(--text); }
+  .mobile-menu .mobile-cta {
+    margin-top: 1rem;
+    padding: 0.875rem;
+    background: var(--accent-dim);
+    border: 1px solid rgba(91,141,239,0.25);
+    border-radius: 10px;
+    color: var(--accent);
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  /* ── LARGE TABLET (max 1024px) ── */
+  @media (max-width: 1024px) {
+    .container { padding: 0 2rem; }
+    section { padding: 100px 0; }
+
+    #about .about-grid { gap: 3.5rem; }
+
+    .card-large { grid-column: span 12; }
+    .card-medium { grid-column: span 6; }
+    .card-third { grid-column: span 6; }
+
+    .contact-grid { gap: 3.5rem; }
+  }
+
+  /* ── TABLET (max 768px) ── */
+  @media (max-width: 768px) {
+    nav { padding: 0 1.25rem; }
+    .nav-links { display: none; }
+    .nav-cta { display: none; }
+    .hamburger { display: flex; }
+
+    .container { padding: 0 1.25rem; }
+    section { padding: 80px 0; }
+
+    .hero-scroll-hint { display: none; }
+
+    #about .about-grid {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      margin-top: 3rem;
+    }
+
+    .card-large, .card-medium, .card-full, .card-third {
+      grid-column: span 12;
+    }
+    .project-card { min-height: 220px; padding: 1.5rem; }
+
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      margin-top: 3rem;
+    }
+
+    .edu-grid { grid-template-columns: 1fr; }
+
+    .projects-header {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 2.5rem;
+    }
+    .projects-header .section-desc { max-width: 100%; }
+
+    .timeline { margin-top: 2.5rem; }
+    .timeline-item { padding: 0 0 3rem 2rem; }
+  }
+
+  /* ── MOBILE (max 480px) ── */
+  @media (max-width: 480px) {
+    nav { height: 56px; padding: 0 1rem; }
+
+    .container { padding: 0 1rem; }
+    section { padding: 64px 0; }
+
+    .hero-content { padding: 0 1rem; }
+    .hero-badge { font-size: 12px; padding: 5px 12px; margin-bottom: 1.75rem; }
+    .hero-h1 { font-size: clamp(2.2rem, 11vw, 3rem); letter-spacing: -0.03em; }
+    .hero-sub { font-size: 1rem; margin-bottom: 2rem; }
+    .hero-actions { flex-direction: column; gap: 0.75rem; }
+    .btn-primary, .btn-ghost { width: 100%; justify-content: center; padding: 14px 20px; font-size: 15px; }
+
+    .section-title { font-size: clamp(1.75rem, 8vw, 2.5rem); }
+
+    #about .about-grid { margin-top: 2rem; gap: 2.5rem; }
+    .about-text p { font-size: 0.97rem; }
+    .info-row { flex-direction: column; gap: 2px; }
+    .info-label { min-width: unset; }
+
+    .bento { border-radius: 12px; }
+    .project-card { padding: 1.25rem; min-height: 200px; }
+    .project-title { font-size: 1.1rem; margin-top: 1.5rem; }
+    .project-desc { font-size: 12px; }
+
+    .timeline-item { padding: 0 0 2.5rem 1.75rem; }
+    .timeline-role { font-size: 1rem; }
+    .timeline-company { font-size: 13px; }
+    .timeline-details li { font-size: 13px; }
+
+    .edu-grid { margin-top: 3rem; border-radius: 10px; }
+    .edu-card { padding: 1.25rem; }
+
+    .contact-grid { margin-top: 2.5rem; gap: 2.5rem; }
+    .contact-info h3 { font-size: 1.15rem; }
+    .contact-info p { font-size: 0.95rem; }
+
+    footer { padding: 2rem 0; }
+    footer p { font-size: 12px; }
+  }
+
+  /* ── VERY SMALL (max 360px) ── */
+  @media (max-width: 360px) {
+    .hero-h1 { font-size: 2rem; }
+    .btn-primary, .btn-ghost { font-size: 14px; padding: 12px 16px; }
+    .project-card { padding: 1rem; }
+    .nav-logo { font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">
+    <span>JS</span>
+    Justine Salmeron
+  </div>
+  <ul class="nav-links">
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#projects" class="nav-link">Projects</a></li>
+    <li><a href="#experience" class="nav-link">Experience</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+  </ul>
+  <a href="assets/pdf/jsalmeron.pdf" class="nav-cta" target="_blank">Download CV ↗</a>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation menu">
+  <a href="#about" class="mobile-nav-link">About</a>
+  <a href="#projects" class="mobile-nav-link">Projects</a>
+  <a href="#experience" class="mobile-nav-link">Experience</a>
+  <a href="#contact" class="mobile-nav-link">Contact</a>
+  <a href="assets/pdf/jsalmeron.pdf" class="mobile-cta" target="_blank">Download CV ↗</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="hero-badge-dot"></span>
+      Available for new opportunities
     </div>
+    <h1 class="hero-h1">
+      Building things<br>
+      <em>for the web.</em>
+    </h1>
+    <p class="hero-sub">
+      Associate Developer with 3+ years crafting web applications and desktop software. Based in Cebu, Philippines.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">
+        View Projects
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#contact" class="btn-ghost">
+        Get in touch
+      </a>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <div class="scroll-line"></div>
+    scroll
+  </div>
+</section>
 
-    <!-- Modal -->
-    <div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content bg-transparent">
-                <div class="modal-body">
-                    <img src="" alt="Full Size Profile Pic" class="w-100 fade-in-text" id="full-size-img">
-                </div>
-            </div>
+<div class="section-divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="section-label">// 01 — about</div>
+    <h2 class="section-title">More than just code.</h2>
+    <p class="section-desc">Developer by day, nature enthusiast whenever I can escape the screen.</p>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I'm <strong>Justine Barnayha Salmeron</strong>, an Associate Developer currently working at YYKredit Inc., a lending company in Mandaue City, where I design and develop web and desktop applications.</p>
+        <p>My work spans jQuery-based web interfaces, PHP backends, and legacy desktop apps built with PowerBuilder. I care about writing code that's maintainable, purposeful, and actually solves problems.</p>
+        <p>When I'm not debugging or pushing commits, I recharge outdoors — camping, trail trekking, and joining environmental initiatives. Nature keeps me grounded (literally).</p>
+
+        <div class="about-info">
+          <div class="info-row">
+            <span class="info-label">location</span>
+            <span class="info-val">Naga, Cebu, Philippines</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">role</span>
+            <span class="info-val">Associate Developer @ YYKredit</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">email</span>
+            <span class="info-val"><a href="mailto:justinesalmeron321@gmail.com">justinesalmeron321@gmail.com</a></span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">status</span>
+            <span class="info-val" style="color:#4ade80;">Open to opportunities</span>
+          </div>
         </div>
+      </div>
+
+      <div class="skills-panel reveal" style="transition-delay:0.1s">
+        <h3>Frontend</h3>
+        <div class="skills-grid">
+          <span class="skill-pill">HTML5</span>
+          <span class="skill-pill">CSS3</span>
+          <span class="skill-pill">JavaScript</span>
+          <span class="skill-pill">jQuery</span>
+          <span class="skill-pill">Bootstrap</span>
+          <span class="skill-pill">ChartJS</span>
+        </div>
+
+        <h3>Backend & Data</h3>
+        <div class="skills-grid">
+          <span class="skill-pill">PHP (Native)</span>
+          <span class="skill-pill">MySQL</span>
+          <span class="skill-pill">Sybase</span>
+        </div>
+
+        <h3>Tools & Platforms</h3>
+        <div class="skills-grid">
+          <span class="skill-pill">Git</span>
+          <span class="skill-pill">WordPress</span>
+          <span class="skill-pill">PowerBuilder 11</span>
+          <span class="skill-pill">PowerScript</span>
+          <span class="skill-pill">Linux</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="projects-header">
+      <div>
+        <div class="section-label">// 02 — projects</div>
+        <h2 class="section-title">Selected Work</h2>
+      </div>
+      <p class="section-desc" style="max-width:320px; margin:0;">A curated snapshot of what I've shipped.</p>
     </div>
 
+    <div class="bento reveal">
+
+      <!-- LARGE: YY Estate -->
+      <div class="project-card card-large">
+        <div class="project-card-glow"></div>
+        <div class="project-number">001</div>
+        <h3 class="project-title">YY Estate — Land Estate Platform</h3>
+        <p class="project-desc">Full real estate web application with property listings, inquiry management, and admin dashboard for YYKredit's land development arm.</p>
+        <div class="project-tags">
+          <span class="tag">PHP</span>
+          <span class="tag">jQuery</span>
+          <span class="tag">Bootstrap</span>
+          <span class="tag">MySQL</span>
+        </div>
+        <div class="project-links">
+          <a class="proj-link" href="https://yykredit.com/yyestate" target="_blank">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            Visit Site
+          </a>
+          <!-- <a class="proj-link" href="#">Details</a> -->
+
+        </div>
+      </div>
+
+      <!-- MEDIUM: PASSIT Payroll -->
+      <div class="project-card card-medium">
+        <div class="project-card-glow"></div>
+        <div class="project-number">002</div>
+        <h3 class="project-title">PASSIT — Payroll System</h3>
+        <p class="project-desc">Desktop payroll application with employee records, salary computation, and report generation. Deployed as a standalone executable.</p>
+        <div class="project-tags">
+          <span class="tag">PowerBuilder</span>
+          <span class="tag">PowerScript</span>
+          <span class="tag">Sybase</span>
+        </div>
+        <div class="project-links">
+          <a class="proj-link" href="https://yykredit.com/hris" target="_blank">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            Visit Site
+          </a>
+          <!-- <a class="proj-link" href="#">Details</a> -->
+
+        </div>
+      </div>
+
+      <!-- MEDIUM: Service Charge -->
+      <div class="project-card card-medium">
+        <div class="project-card-glow"></div>
+        <div class="project-number">003</div>
+        <h3 class="project-title">Service Charge App</h3>
+        <p class="project-desc">Internal desktop application for automated service charge computation and distribution across departments.</p>
+        <div class="project-tags">
+          <span class="tag">PowerBuilder</span>
+          <span class="tag">Sybase</span>
+        </div>
+        <div class="project-links">
+          <!-- <a class="proj-link" href="javascript:void(0);" target="_blank">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            Visit Site
+          </a> -->
+          <!-- <a class="proj-link" href="#">Details</a> -->
+
+        </div>
+      </div>
+
+      <!-- LARGE: Saint Cecilia's -->
+      <div class="project-card card-large">
+        <div class="project-card-glow"></div>
+        <div class="project-number">004</div>
+        <h3 class="project-title">Saint Cecilia's College — Web Portal</h3>
+        <p class="project-desc">Institutional web portal with student information management, self-hosted infrastructure, and MySQL database architecture. Built during OJT stint at the college.</p>
+        <div class="project-tags">
+          <span class="tag">PHP</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">ChartJS</span>
+          <span class="tag">Bootstrap</span>
+        </div>
+        <div class="project-links">
+          <a class="proj-link" href="https://stcecilia.edu.ph/" target="_blank">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            Visit Site
+          </a>
+          <!-- <a class="proj-link" href="#">Details</a> -->
+
+        </div>
+      </div>
+
+      <!-- THIRD: Hayat -->
+      <div class="project-card card-third">
+        <div class="project-card-glow"></div>
+        <div class="project-number">005</div>
+        <h3 class="project-title">Hayat Sky Towers</h3>
+        <p class="project-desc">WordPress site for a high-rise property development client.</p>
+        <div class="project-tags">
+          <span class="tag">WordPress</span>
+        </div>
+        <div class="project-links">
+          <a class="proj-link" href="https://www.hayatskytowers.com/" target="_blank">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            Visit Site
+          </a>
+        </div>
+      </div>
+
+      <!-- THIRD: Lemenda -->
+      <div class="project-card card-third">
+        <div class="project-card-glow"></div>
+        <div class="project-number">006</div>
+        <h3 class="project-title">Lemenda Projects</h3>
+        <p class="project-desc">Built for the Vestahome Commercial portfolio.</p>
+        <div class="project-tags">
+          <span class="tag">HTML/CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">jQuery</span>
+        </div>
+        <div class="project-links">
+          <a class="proj-link" href="https://lemenda.vestahomes.com.ph/" target="_blank">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            Visit Site
+          </a>
+          <!-- <a class="proj-link" href="#">Details</a> -->
+
+        </div>
+      </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>s
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const links = document.querySelectorAll("nav ul li a");
-            const sections = document.querySelectorAll(".content-section");
-            const sidebar = document.querySelector(".js-sidebar");
-    
+      <!-- THIRD: ntouch -->
+      <div class="project-card card-third">
+        <div class="project-card-glow"></div>
+        <div class="project-number">007</div>
+        <h3 class="project-title">Ntouch Services</h3>
+        <p class="project-desc">Service platform web interface built with PHP and Bootstrap.</p>
+        <div class="project-tags">
+          <span class="tag">PHP</span>
+          <span class="tag">Bootstrap</span>
+        </div>
+        <div class="project-links">
+          <a class="proj-link" href="javascript:void(0);" target="_blank">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            Visit Site
+          </a>
+          <!-- <a class="proj-link" href="#">Details</a> -->
 
-            
-            function showSection(id) {
-                sections.forEach(section => {
-                    section.classList.remove("active-section");
-                    if (section.id === id) {
-                        section.classList.add("active-section");
-                    }
-                });
-            }
+        </div>
+      </div>
 
-            function showItemMenu(id) {
-                links.forEach(link => {
-                    link.classList.remove("active-itemmenu");
-                    if (link.getAttribute("id") === id) {
-                        link.classList.add("active-itemmenu");
-                    }
-                });
-            }
-    
-            links.forEach(link => {
-                link.addEventListener("click", function (event) {
-                    event.preventDefault();
-                    const target = this.getAttribute("data-target");
-                    const itemmenu = this.getAttribute("id");
-                    showSection(target);
-                    showItemMenu(itemmenu);
-                    localStorage.setItem('active-items', itemmenu);
-                    
-                    localStorage.setItem("activeSection", target);
-                    if (window.innerWidth <= 768) {
-                        sidebar.classList.remove("active");
-                    }
-                });
-            });
-    
-            const savedSection = localStorage.getItem("activeSection");
-            const saveItemMenu = localStorage.getItem("active-items");
-            if (savedSection) {
-                showSection(savedSection);
-            } else {
-                showSection("about-me");
-            }
+    </div>
+  </div>
+</section>
 
-            if (saveItemMenu) {
-                showItemMenu(saveItemMenu);
-            } else {
-                showItemMenu("about-me-item");
-            }
-            
-            const profileImg = document.getElementById("js-profile-img");
-            const profileModal = new bootstrap.Modal(document.getElementById("profileModal"));
-    
-            profileImg.addEventListener("click", function () {
-                profileModal.show();
-               $('img#full-size-img').attr('src', $('img#js-profile-img').attr('src'));
-            });
+<div class="section-divider"></div>
 
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <div class="section-label">// 03 — experience</div>
+    <h2 class="section-title">Where I've worked.</h2>
+    <p class="section-desc">A timeline of professional roles since graduation.</p>
 
-            // javascript array methods
-            //values
-            const arr = ['apple', 'banana', 'orange'];
-            const iterator = arr.values();
-            for (const value of iterator) {
-                console.log(value);
-            }
+    <div class="timeline reveal">
 
-            // length
-            console.log(arr.length);
-            
-            //reverse
-            console.log(arr.reverse());
+      <div class="timeline-item">
+        <div class="timeline-date">May 2023 — Present</div>
+        <div class="timeline-role">Associate Developer</div>
+        <div class="timeline-company">YYKredit Inc. · Mandaue City, Cebu</div>
+        <ul class="timeline-details">
+          <li>Design and develop existing web systems using jQuery, PHP, Bootstrap, and ChartJS</li>
+          <li>Maintain Sybase database server and write complex queries for financial reporting</li>
+          <li>Build and maintain desktop applications using PowerBuilder 11.0 and PowerScript</li>
+          <li>Deploy desktop applications as standalone executables across company workstations</li>
+        </ul>
+      </div>
 
-            //at
-            console.log(arr.at(0));
+      <div class="timeline-item">
+        <div class="timeline-date">June 2022 — March 2023</div>
+        <div class="timeline-role">Web Developer</div>
+        <div class="timeline-company">Vestahome Commercial Inc. · Cebu City</div>
+        <ul class="timeline-details">
+          <li>Designed and developed WordPress websites for property development clients</li>
+          <li>Managed hosting setup, plugins, and client content updates</li>
+          <li>Delivered multiple property portfolio websites including Hayat Sky Towers and Lemenda Projects</li>
+        </ul>
+      </div>
 
-            // fill
-            arr.fill('kiwi', 0, 1);
-            console.log(arr);
-        
-        });
+      <div class="timeline-item">
+        <div class="timeline-date">March 2019 — July 2022</div>
+        <div class="timeline-role">Web Developer & IT Technical Support</div>
+        <div class="timeline-company">Saint Cecilia's College · Minglanilla, Cebu (OJT / Working Student)</div>
+        <ul class="timeline-details">
+          <li>Developed PHP-based institutional website with MySQL database and ChartJS analytics</li>
+          <li>Managed server hosting and web application deployment on-premise</li>
+          <li>Provided hardware/software troubleshooting, PC repair, and network cabling support</li>
+        </ul>
+      </div>
 
-        var reservedYear;
+    </div>
 
-        function formatAMPM() {
-            var date = new Date();
-            var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-            var getDay = date.getDay();
-            var getDate = date.getDate();
-            var getYear = date.getFullYear();
-            reservedYear = getYear;
-            var monthname = date.toLocaleString('default', {
-                month: 'long'
-            });
-            var getDays = days[getDay];
-            var hours = date.getHours();
-            var minutes = date.getMinutes();
-            var seconds = date.getSeconds();
-            var ampm = hours >= 12 ? 'PM' : 'AM';
-            hours = hours % 12;
-            hours = hours ? hours : 12; // the hour '0' should be '12'
-            minutes = minutes < 10 ? '0' + minutes : minutes;
-            seconds = seconds < 10 ? '0' + seconds : seconds; // ensure seconds are always two digits
-            var strTime = hours + ':' + minutes + ':' + seconds + ' ' + ampm;
-            var timeToday = `${getDays} - ${monthname} ${getDate}, ${getYear}  ${strTime}`;
+    <div class="edu-grid reveal" style="transition-delay:0.15s">
+      <div class="edu-card">
+        <div class="edu-level">College</div>
+        <div class="edu-school">St. Cecilia's College Cebu Inc.</div>
+        <div class="edu-detail">Bachelor of Science in Information Technology</div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-level">High School</div>
+        <div class="edu-school">Naga National High School</div>
+        <div class="edu-detail">City of Naga, Cebu</div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-level">Elementary</div>
+        <div class="edu-school">Pangdan Elementary School</div>
+        <div class="edu-detail">Pangdan, City of Naga, Cebu</div>
+      </div>
+    </div>
 
-            return timeToday;
-        }
+  </div>
+</section>
 
-        function updateClock() {
-            $('#realtime-hours').html(formatAMPM());
-            $('#realtime-year').html(reservedYear);
-        }
-        updateClock();
-        setInterval(updateClock, 1000);
-    </script>
-  </body>
+<div class="section-divider"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-label">// 04 — contact</div>
+    <h2 class="section-title">Let's connect.</h2>
+    <p class="section-desc">Have a project in mind or just want to say hello? My inbox is always open.</p>
+
+    <div class="contact-grid">
+      <form class="contact-form reveal" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea rows="5" placeholder="What's on your mind..." required></textarea>
+        </div>
+        <button type="submit" class="submit-btn" id="submitBtn">Send Message →</button>
+      </form>
+
+      <div class="contact-info reveal" style="transition-delay:0.1s">
+        <h3>Open to collaboration.</h3>
+        <p>Whether it's a freelance project, a full-time opportunity, or just a conversation — reach out. I'm based in Cebu but work remotely too.</p>
+
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:justinesalmeron321@gmail.com">
+            <div class="contact-link-icon">
+              <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+            </div>
+            <div>
+              <div style="font-size:14px; color:var(--text); margin-bottom:2px;">Email</div>
+              <div style="font-size:12px; color:var(--text-3); font-family:var(--mono);">justinesalmeron321@gmail.com</div>
+            </div>
+          </a>
+
+          <a class="contact-link" href="tel:+639551129028">
+            <div class="contact-link-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.07 1.17 2 2 0 012 .02h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.07v2.85z"/></svg>
+            </div>
+            <div>
+              <div style="font-size:14px; color:var(--text); margin-bottom:2px;">Phone</div>
+              <div style="font-size:12px; color:var(--text-3); font-family:var(--mono);">+63 955 112 9028</div>
+            </div>
+          </a>
+
+          <a class="contact-link" href="https://github.com/justine321" target="_blank">
+            <div class="contact-link-icon">
+              <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            </div>
+            <div>
+              <div style="font-size:14px; color:var(--text); margin-bottom:2px;">GitHub</div>
+              <div style="font-size:12px; color:var(--text-3); font-family:var(--mono);">github.com/justine321</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <p>Designed & built by <span>Justine Barnayha Salmeron</span> · <span>2025</span></p>
+  </div>
+</footer>
+
+<script>
+  // Hamburger menu toggle
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  function toggleMenu(open) {
+    hamburger.classList.toggle('open', open);
+    hamburger.setAttribute('aria-expanded', open);
+    if (open) {
+      mobileMenu.style.display = 'flex';
+      requestAnimationFrame(() => mobileMenu.classList.add('open'));
+    } else {
+      mobileMenu.classList.remove('open');
+      setTimeout(() => { mobileMenu.style.display = ''; }, 260);
+    }
+  }
+
+  hamburger.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.contains('open');
+    toggleMenu(!isOpen);
+  });
+
+  document.querySelectorAll('.mobile-nav-link').forEach(link => {
+    link.addEventListener('click', () => toggleMenu(false));
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) {
+      toggleMenu(false);
+    }
+  });
+
+  // Intersection Observer for reveal animations
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach(el => observer.observe(el));
+
+  // Active nav link highlighting
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  function updateActiveNav() {
+    let current = '';
+    sections.forEach(section => {
+      if (window.scrollY >= section.offsetTop - 120) {
+        current = section.getAttribute('id');
+      }
+    });
+    navLinks.forEach(link => {
+      link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+    });
+  }
+  window.addEventListener('scroll', updateActiveNav, { passive: true });
+
+  // Project card hover glow follows mouse
+  document.querySelectorAll('.project-card').forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const glow = card.querySelector('.project-card-glow');
+      if (glow) {
+        glow.style.left = (e.clientX - rect.left - 100) + 'px';
+        glow.style.top = (e.clientY - rect.top - 100) + 'px';
+      }
+    });
+  });
+
+  // Form submit
+  function handleSubmit(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submitBtn');
+    btn.textContent = 'Message sent ✓';
+    btn.style.background = '#22c55e';
+    btn.style.opacity = '1';
+    setTimeout(() => {
+      btn.textContent = 'Send Message →';
+      btn.style.background = '';
+      e.target.reset();
+    }, 3000);
+  }
+</script>
+</body>
 </html>
